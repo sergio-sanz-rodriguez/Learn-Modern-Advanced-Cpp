@@ -1,7 +1,7 @@
 #ifndef LIFE_H
 #define LIFE_H
 
-const char live_cell{'X'};
+const char live_cell{'O'};
 const char dead_cell{' '};
 
 // Standard ANSI console, with a 1-char border

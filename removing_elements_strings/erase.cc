@@ -7,7 +7,7 @@ int main() {
 	string hello{ "Hello" };
 	cout << "hello = " << hello << endl;
 	
-	hello.erase(3, 1);                     // Erase fourth character
+	hello.erase(3,1);                     // Erase fourth character
 	
 	cout << "hello = " << hello << endl;
 	

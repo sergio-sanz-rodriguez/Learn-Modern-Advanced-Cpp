@@ -12,4 +12,10 @@ int main() {
 	std::vector<int> numbers {1, 2, 3, 4, 5};
 
 	print(numbers.data(), numbers.size());
+
+    for(int i : numbers)
+    {
+        cout << i << ", ";
+    }
+    cout << endl;
 }

@@ -12,12 +12,14 @@ int main() {
 	}
 	
 	for (int i = 0; i < 1'000'000; ++i) {
-		cout << i << "\n";
-		ofile << i << "\n";
+		cout << i << "\n" << flush; // equivalent cout << i << endl; endl is equivalent to new line followed by flush
+		ofile << i << "\n" << flush; // equivalent cout << i << endl;
 		
-		//if (i == 66666)
-			//throw std::exception();
+		if (i == 66666)
+        {                        
+			throw std::exception();
+        }
 	}
 	
 	ofile.close();
-}
+} 

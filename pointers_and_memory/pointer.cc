@@ -11,4 +11,6 @@ int main() {
 	int *p2 = new int;                        // p2 points to memory allocated from the heap
 	int *p3 = new int{36};                    // p3 points to int with initial value 36 (C++11)
 	//int *p3 = new int(36);                    // older versions of C++
+    cout << "*p2 = " << *p2 << endl;
+    cout << "*p3 = " << *p3 << endl;
 }

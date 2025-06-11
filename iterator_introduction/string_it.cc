@@ -4,7 +4,8 @@
 using namespace std;
 
 int main() {
-	string str{"Hello"};
+	//string str{"Hello"};
+    string str = "Hello"s;
 	string::iterator it = str.begin();                // Start of string
 
 	while (it != str.end()) {                         // Gone past last element?

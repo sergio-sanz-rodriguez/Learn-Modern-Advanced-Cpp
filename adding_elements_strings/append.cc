@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	string hello {"Hello"};
+	string hello = "Hello"s; // {"Hello"};
 	
 	hello.append(" world"s);
 	cout << "hello = " << hello << endl;

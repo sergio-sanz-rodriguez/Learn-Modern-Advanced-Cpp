@@ -20,7 +20,9 @@ pfunc other_func() {
 }
 
 int main() {
-	auto func_ptr = other_func();
+	//auto func_ptr = other_func();
+    //auto func_ptr = &func;
+    pfunc func_ptr = &func;
 	
 	some_func(1, 2, func_ptr);
 }

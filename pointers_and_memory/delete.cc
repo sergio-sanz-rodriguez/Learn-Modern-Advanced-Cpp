@@ -5,6 +5,7 @@ using namespace std;
 void badfunc() {
 	int *p4 = new int{42};                    // Allocate memory in function
 	delete p4;                                // Release memory
+    //*p4 = 99;
 	return;                                   
 }                                             // No memory leak
 

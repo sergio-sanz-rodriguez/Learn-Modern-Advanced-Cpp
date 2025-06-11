@@ -21,13 +21,22 @@ bool equal_strings(const string& lhs, const string& rhs) {
 	// and the loop terminates.
 	// On each iteration, we look for a mismatch. If the character has a different value in the two
 	// strings, then we know the strings are different and we can terminate the loop.
-    while (lit != cend(lhs) && rit != cend(rhs)) {
-		// We use toupper to compare the upper-case version of the two characters
-        if (toupper(*lit) != toupper(*rit))
-            return false;                    // Mismatch - return false
-        // No mismatch found - we move to the next character in each string
-		++lit;
-        ++rit;
+    //while (lit != cend(lhs) && rit != cend(rhs)) {
+	//	// We use toupper to compare the upper-case version of the two characters
+    //    if (toupper(*lit) != toupper(*rit))
+    //        return false;                    // Mismatch - return false
+    //    // No mismatch found - we move to the next character in each string
+	//	++lit;
+    //    ++rit;
+    //}
+
+
+    for (int i : lhs)
+    {
+        if( toupper(lhs[i]) != toupper(rhs[i]) )
+        {
+            return false;
+        }
     }
 	
 	// If we got here, we looked at all the characters in the string and not found

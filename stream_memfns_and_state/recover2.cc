@@ -17,7 +17,7 @@ int main() {
 		else if (cin.fail()) {   
 			cout << "Please try again and enter a number\n";
 			cin.clear();
-			cin >> x;
+			cin >> x;  
 		}
 	}
 }

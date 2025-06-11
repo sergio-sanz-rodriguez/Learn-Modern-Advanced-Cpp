@@ -6,8 +6,9 @@ using namespace std;
 
 int main() {
 ifstream ifile{"text.txt"};       // Define ifile as an ifstream variable bound to text.txt
-	
-	if (ifile) {
+
+    if (ifile) {
+        cout << "entro" << endl;
 		string text{""};
 		while (ifile >> text) {        // Read a word from the file
 			cout << text << ", ";

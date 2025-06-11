@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-	ofstream ofile{"text_out.txt"};     // Define ofile as an ofstream variable bound to text_out.txt
+	ofstream ofile{"text_out2.txt"};     // Define ofile as an ofstream variable bound to text_out.txt
 	
 	if (ofile) {
 		vector<string> words = {"The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};

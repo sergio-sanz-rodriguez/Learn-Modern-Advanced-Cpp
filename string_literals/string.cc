@@ -8,7 +8,7 @@ int main() {
 	const char *cca = "Hello, world!";
 	cout << "cca: " << cca << endl;
 	
-	string str = "Hello, world!"s;
+	string str = "Hello, world!";
 	cout << "str: " << str << endl;
 	
 	cout << "std::string literal: " << "Hello"s  + ", world!"s << endl;

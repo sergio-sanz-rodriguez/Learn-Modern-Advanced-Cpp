@@ -21,4 +21,8 @@ int main() {
 	
 	auto x = stoi("2a", nullptr, 16);
 	cout << "Result of conversion: " << x << endl;  // Displays 42
+
+    string pi{"3.14159"};
+    cout << stoi(pi) << endl;
+    cout << stof(pi) << endl;
 }

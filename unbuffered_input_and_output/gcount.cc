@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 	const int filesize{10};              // The size of the memory buffer
 	char filebuf[filesize];              // The memory buffer
-	string filename{"input.txt"};
+	string filename{"../input.txt"};
 
 	ifstream ifile(filename);
 

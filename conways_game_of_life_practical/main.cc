@@ -1,7 +1,7 @@
 #include "grid.h"
 
 // Uncomment if running in Windows Console
-//#include "ansi_escapes.h"
+#include "ansi_escapes.h"
 
 int main(int argc, char *argv[]) {
     std::cout << "Conway's game of Life\n";
@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
 
     // Uncomment if running in Windows Console
     // Enable ANSI escape codes on Windows
-    //setupConsole();
+    setupConsole();
 
     // Grid for the first generation
     grid current_generation;
@@ -42,5 +42,5 @@ int main(int argc, char *argv[]) {
 
     // Uncomment if running in Windows Console
     // Restore console on Windows
-    // restoreConsole();
+    restoreConsole();
 }

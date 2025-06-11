@@ -11,8 +11,8 @@ int main() {
 	
 	// Wrong
 	while (!ifile.eof()) {
-		ifile >> x;
-		cout << x << ", ";
+		ifile >> x; // read from file
+		cout << x << ", "; // write to cout
 	}
 	
 	// Correct

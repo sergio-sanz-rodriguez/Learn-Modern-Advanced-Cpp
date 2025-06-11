@@ -9,13 +9,14 @@ int main() {
 
 	size_t pos = str.find('o');
 
-	if (pos != string::npos) {
+	if (pos != (str.end() - str.begin())) { //string::npos) {
 		cout << R"(First occurrence of 'o' is at index )" << pos << endl;
 	}
 	else {
 		cout << R"(Could not find 'o' in the string)" << endl;
 	}
 
+    //string::npos -> static const size_t npos = -1;
 	pos = str.find("or");
 
 	if (pos != string::npos) {
