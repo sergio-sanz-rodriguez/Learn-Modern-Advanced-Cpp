@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <iterator>
 
 using namespace std;
@@ -11,4 +12,13 @@ int main() {
 		*oi = i;                                       // Prints the number followed by "\n"
 		++oi;                                          // Move to next element in sequence
 	}
+
+    // My approach
+    
+    ostringstream os;
+    ostream_iterator<int> oi2(os, "\n");
+
+    *oi2 = 100;
+    cout << os.str() << endl;
+
 }

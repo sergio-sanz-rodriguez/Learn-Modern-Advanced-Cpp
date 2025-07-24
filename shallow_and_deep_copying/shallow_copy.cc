@@ -35,10 +35,10 @@ public:
 int main() {
 	String str("1"s);
 	
-		String str2("Two"s);
-		String str3(str2);
-		cout << "Str2 size: " << str2.length() << endl;
-		cout << "Str3 size: " << str3.length() << endl;
+    String str2("Two"s);
+    String str3(str2);
+    cout << "Str2 size: " << str2.length() << endl;
+    cout << "Str3 size: " << str3.length() << endl;
 	
 	cout << "Str size: " << str.length() << endl;
 }

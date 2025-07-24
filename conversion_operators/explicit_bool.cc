@@ -17,5 +17,7 @@ int main() {
 	cout << static_cast<int>(test) << endl;              
 	
 	if (test)
-		cout << "This is allowed!" << endl;
+		//cout << static_cast<int>(test) << "This is allowed!" << endl; //ok
+        //cout << test << "This is allowed!" << endl; // not ok
+        cout << "This is allowed!" << endl;
 }

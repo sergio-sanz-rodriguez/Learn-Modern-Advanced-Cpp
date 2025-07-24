@@ -1,5 +1,5 @@
 #include <fstream>
-#include "bitmap.h"
+#include "./bitmap.h"
 
 using namespace std;
 

@@ -9,5 +9,7 @@ class Test {
 };
 
 int main() {
-	Test test = 4;
+	Test test = 4; // error
+    Test test(4); // must explicitly create an object
+    Test test = Test{4};
 }

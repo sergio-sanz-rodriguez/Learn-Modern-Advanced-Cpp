@@ -16,5 +16,5 @@ int main() {
 	}
 
 	for (auto v: vs)
-	    cout << v << endl;
-}
+	    cout << v << endl << endl;
+} //with control-Z the program finishes.

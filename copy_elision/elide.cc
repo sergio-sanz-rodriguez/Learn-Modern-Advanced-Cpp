@@ -9,12 +9,15 @@ class Test {
 };
 
 // Function returning a temporary object
+//Calls the default constructor: "Default constructor"
+//Returns a temporary object → causes a copy constructor call to return the object (Copying).
 Test func() {                                                            
     return Test();
 }
 
 int main() {
 	cout << "Calling func()" << endl;
+    //Initializes test using the result of func() → causes another copy: Copying
 	Test test = func();                 // How many times is "Copying" printed out?
 	cout << "Returned from func()" << endl;
 }
