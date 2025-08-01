@@ -43,6 +43,18 @@ Complex Complex::operator --(int) {
 }
 
 int main() {
+    int arr[] = {4,3,2,1};
+
+    int p = *(&(*(&(*(&(*(&(*(&(*(&(*(&arr[1]))+1))+1))+1))-1))-1))-1);
+
+    cout << p << endl;
+
+    //for (int i=0; i<4; ++i) {
+        //cout << *p << endl;
+        //++p;
+        //cout << *p++ <<endl;
+    //}
+
 	Complex c(5, 6);
 	cout << "Initial value of c: ";
 	c.print();

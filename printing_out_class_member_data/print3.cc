@@ -7,7 +7,9 @@ using namespace std;
 class Test {
 	int i{42};
 	string str{"Hello"s};
+    //friend std::ostream& operator <<(std::ostream & os, const Test& test) {}
 public:
+    
 	/*
 	* A member function which prints out the data members of the Test class.
 	* This version will work with any output stream, not just cout.
@@ -27,6 +29,12 @@ std::ostream& operator <<(std::ostream & os, const Test& test) {
     test.print(os);
     return os;
 }
+
+//std::ostream& operator<<(std::ostream& os, const Test& test) {
+//    // Now operator<< can access private members directly!
+//    os << "i = " << test.i << ", str = " << test.str;
+//    return os;
+//}
 
 int main() {
 	Test test;

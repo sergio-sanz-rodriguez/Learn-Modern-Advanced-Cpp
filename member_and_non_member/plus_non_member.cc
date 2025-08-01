@@ -11,6 +11,11 @@ public:
 	String(const string& s) : s(s) {}
 	
 	friend String operator +(const String& arg1, const String& arg2);
+
+    //Wrong
+    //String operator +(const String& arg1, const String& arg2) {
+	    //return arg1.s + arg2.s;
+    //}
 	
 	void print() { cout << s << endl; }
 };
