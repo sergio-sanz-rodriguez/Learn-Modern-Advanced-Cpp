@@ -23,9 +23,10 @@ int main() {
 	
 	// Find the first element with more than 5 characters
 	// Pass a functor object as predicate
-	auto res = find_if(cbegin(names), cend(names), ge_n(5));
+    int num = 3;
+	auto res = find_if(cbegin(names), cend(names), ge_n(num));
 
 	// Display it
 	if (res != cend(names))
-		cout << "The first word with > 5 characters is \"" << *res << "\"\n";
+		cout << "The first word with > " << num << " characters is \"" << *res << "\"\n";
 }
