@@ -8,4 +8,11 @@ int main() {
 	
 	cout << "Calling add_z_plus1(2) gives " << add_z_plus1(2) << endl;
 	cout << "Calling add_z_plus1(5) gives " << add_z_plus1(5) << endl;
+
+    // My proposal?
+    auto add_z_plus1_2 = [z](int x) {auto y = z + 1; return x + y; };
+
+    cout << "Calling add_z_plus1_2(2) gives " << add_z_plus1_2(2) << endl;
+	cout << "Calling add_z_plus1_2(5) gives " << add_z_plus1_2(5) << endl;
+
 }

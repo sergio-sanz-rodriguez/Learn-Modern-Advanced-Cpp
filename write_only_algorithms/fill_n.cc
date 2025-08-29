@@ -10,6 +10,9 @@ int main() {
 	
 	auto begin_rest = fill_n(begin(vec), 5, 42);              // Assign 42 to the first 5 elements
 	fill (begin_rest, end(vec), 99);                          // Assign 99 to the remaining elements
+
+    //fill (begin(vec), begin(vec) + 5, 42);
+    //fill (begin(vec) + 5, end(vec), 99);
 	
 	/*
 	int i;

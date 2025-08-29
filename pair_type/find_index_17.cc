@@ -19,7 +19,7 @@ using namespace std;
 	 }
 	 else {
 		 return pair{ ""s, idx };
-	 }
+	 } 
 }
 
 int main() {

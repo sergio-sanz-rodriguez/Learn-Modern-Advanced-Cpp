@@ -13,7 +13,7 @@ int main() {
 		cout << name << ", ";
 	cout << endl << endl;
 
-	sort(begin(names), end(names), less<string>());
+	sort(begin(names), end(names), less<string>()); //cbegin, cend cannot be implemented because it would not allow to modify the vector values, when you order, the elements are modified.
 
 	cout << "Vector after sort() with std::less\n";
 	for (auto name : names)
