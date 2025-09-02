@@ -4,6 +4,8 @@
 #include <thread>
 #include "constants.h"
 
+// g++ random_walk_2d.cc -o random_walk_2d -IC:/msys64/mingw64/include -LC:/msys64/mingw64/lib -lsfml-graphics -lsfml-window -lsfml-system
+
 using namespace std;
 using namespace std::literals;
 
@@ -15,8 +17,8 @@ class character {
 
     // Define some properties of the creature
     // SFML uses float internally
-    float vx{5.0f};
-    float vy{5.0f};
+    float vx{50.0f};
+    float vy{50.0f};
     sf::Vector2f velocity;
 
     // We use the SFML CircleShape
@@ -37,7 +39,7 @@ public:
         shape.setPosition(x, y);
 
         // Set the graphical properties of the character
-        shape.setRadius(5.0f);
+        shape.setRadius(50.0f);
         shape.setFillColor(sf::Color::Red);
     }
 

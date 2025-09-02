@@ -12,4 +12,16 @@ int main() {
 	
 	arr[2] = 6;
 	cout << "After assignment, arr[2] = " << arr[2] << endl;
+
+    std::array<int, 5> arr2;
+    arr2 = arr;
+    for (auto it = begin(arr2); it != end(arr2); ++it)
+    {
+        cout << *it << endl;
+    }
+    for (auto el: arr2)
+    {
+        cout << el << endl;
+    }
+
 }
