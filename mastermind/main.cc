@@ -25,7 +25,7 @@ peg_array populate() {
 
 int main() {
 	peg_array pegs = populate();
-	// peg_array pegs = {'R', 'R', 'R', 'B'};
+	//peg_array pegs = {'R', 'R', 'R', 'B'};
 
 	bool winner{false};
 	
@@ -36,7 +36,7 @@ int main() {
 		auto loose = loose_matches(input, pegs) - exact;
 		cout << exact << " exact match(es)" << endl;
 		cout << loose << " near match(es)" << endl;
-
+ 
 		if (exact == constants::npegs) {
 			cout << "You have found the correct solution! ";
 			for (auto peg : pegs)

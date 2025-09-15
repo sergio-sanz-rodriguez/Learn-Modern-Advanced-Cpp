@@ -27,4 +27,26 @@ int main() {
 	cout << "\nRemoving top element\n";
 	pq.pop();
 	print(pq);
+
+    // Remove the top element
+	cout << "\nRemoving top element\n";
+	pq.pop();
+	print(pq);
+
+    // Remove the top element
+	cout << "\nRemoving top element\n";
+	pq.pop();
+	print(pq);
+
+    // Remove the top element
+	cout << "\nRemoving top element\n";
+	pq.pop();
+	print(pq);
+
+    // Remove the top element
+	cout << "\nRemoving top element\n";
+	pq.pop();
+	print(pq);
+
+
 }
