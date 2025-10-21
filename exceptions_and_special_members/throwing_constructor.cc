@@ -22,6 +22,7 @@ int main() {
 		cout << "sgrade created\n";   // If we get here, no exception was thrown - safe to use sgrade
 	}
 	catch (const std::out_of_range& e) {
+    //catch (const std::exception& e) {
 		cout << "StudentGrade constructor threw an exception:\n" << e.what() << endl;
 	}
 }

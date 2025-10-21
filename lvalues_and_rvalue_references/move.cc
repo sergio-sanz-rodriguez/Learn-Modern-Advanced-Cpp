@@ -35,4 +35,5 @@ int main() {
 	cout << "std::move(): ";
 	test(std::move(r));
 	*/
+
 }

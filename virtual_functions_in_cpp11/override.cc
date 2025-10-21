@@ -9,6 +9,7 @@ public:
 
 class Circle : public Shape {
 public:
+    //using Shape::draw;
 	void draw() const override { cout << "Drawing a circle...\n"; }    // OK - overrides Shape::draw()
 	//void draw(int radius) const override;                            // Error! Does not override
 };

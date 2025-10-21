@@ -20,7 +20,7 @@ int main() {
 	shapes.push_back(new Circle);
 
 	for (auto s: shapes)
-		static_cast<Circle *>(s)->draw();              // Calls Shape::draw()
+		static_cast<Circle *>(s)->draw();              // Calls Circle ::draw()
 
 	for (auto s : shapes)       // Release allocated memory
 		delete s;

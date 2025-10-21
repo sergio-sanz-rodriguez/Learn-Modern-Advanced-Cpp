@@ -20,5 +20,7 @@ public:
 };
 
 int main() {
-	Shape shape;                          // Does not compile - cannot create variable of abstract type
+	//Shape shape;                          // Does not compile - cannot create variable of abstract type
+    Circle circle;
+    circle.draw();
 }

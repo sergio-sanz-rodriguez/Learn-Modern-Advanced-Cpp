@@ -5,6 +5,7 @@ using namespace std;
 class Shape {
 public:
 	virtual void draw() const { cout << "Drawing a generic shape...\n"; }
+    //void draw() const { cout << "Drawing a generic shape...\n"; }
 };
 
 class Circle: public Shape {
