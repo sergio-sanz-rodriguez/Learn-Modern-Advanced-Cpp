@@ -47,6 +47,8 @@ int main() {
 	Test test;                                 // Call default constructor
 	cout << "Copying: ";
 	Test test2 = test;                         // Call copy constructor 
+    cout << "\nCopying: ";
+    Test test21(test);                         // Call copy constructor 
 	cout << "\nMoving temporary: ";
 	Test test3 = Test();                       // Call move constructor by using temporary object
 	cout << "\nMoving rvalue: ";
@@ -61,4 +63,8 @@ int main() {
 	Test test6;
 	cout << "\nAssigning from temporary: ";
 	test6 = Test();                            // Call move assignment operator
+
+    Test test7; 
+    cout << "\nAssigning from casted lvalue: ";
+	test7 = std::move(test2);                            // Call move assignment operator
 }

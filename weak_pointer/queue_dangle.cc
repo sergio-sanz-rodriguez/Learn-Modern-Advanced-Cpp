@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <memory>
 #include <vector>
 
@@ -26,6 +26,6 @@ int main() {
 		
 	cout << "Deleting vec[2]\n";
 	vec[2] = nullptr;
-	
+    	
 	print(vec);
 }

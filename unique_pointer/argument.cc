@@ -14,6 +14,7 @@ void func(unique_ptr<Point> upp) {
 }
 
 int main() {
-	auto p{ make_unique<Point>( Point{3, 6} )};            // Create local unique_ptr object
-	func(std::move(ptr));
+	auto ptr{ make_unique<Point>( Point{3, 6} )};            // Create local unique_ptr object
+	//func(std::move(ptr));
+    func(ptr);
 }

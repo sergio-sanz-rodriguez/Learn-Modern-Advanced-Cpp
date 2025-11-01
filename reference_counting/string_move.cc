@@ -29,7 +29,7 @@ class String {
 			}
 		}
 		else
-			cout << endl;
+			cout << endl; 
 	}
 	
 	// Declare overloaded swap() as a friend of this class
