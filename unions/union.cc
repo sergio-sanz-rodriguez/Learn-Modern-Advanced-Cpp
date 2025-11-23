@@ -11,7 +11,8 @@ union Token {
 
 int main() {
 	Token token;
-	token.c = 'Z';               // char member is in use
+	//token.d = 323324.12;
+    //token.c = 'Z';               // char member is in use
 	
 	cout << token.d << endl;    // Double member not in use - has undefined value
 }

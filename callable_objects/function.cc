@@ -32,7 +32,7 @@ int count_strings(vector<string> &texts, function<bool(const string&)> match_ptr
     }
 
     return tally;
-}
+}  
 
 int main() {
 	vector<string> animals = {"cat", "dog", "tiger", "lion", "bear", "cat", "giraffe"};

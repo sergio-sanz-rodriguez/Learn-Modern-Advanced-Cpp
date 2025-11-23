@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include "array.h"
 
 int array_print(int arr[], int n) {
