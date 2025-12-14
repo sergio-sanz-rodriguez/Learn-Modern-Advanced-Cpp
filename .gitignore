@@ -1,0 +1,12 @@
+# Ignore Windows executables
+*.exe
+
+# (optional) object files
+*.o
+*.obj
+
+# (optional) build directories
+/build/
+/bin/
+/output/
+
