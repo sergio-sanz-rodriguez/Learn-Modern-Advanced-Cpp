@@ -12,6 +12,8 @@ int main() {
 
 	// decltype with lvalue expression
 	decltype((x)) p{x};          // The type of p is lvalue reference to int
+    ++p;
+    cout << p << ", " << x << endl;
 
 	// decltype with prvalue
 	decltype(42) z;              // The type of z is int

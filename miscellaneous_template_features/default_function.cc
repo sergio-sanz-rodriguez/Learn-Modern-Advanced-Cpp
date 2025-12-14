@@ -15,5 +15,5 @@ int main() {
 
 	// Instantiate function with int
 	func(normal1, normal2);
-
+ 
 }

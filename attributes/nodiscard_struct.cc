@@ -5,10 +5,11 @@
 struct [[nodiscard]] Test {};
 
 // Function whose return value should not be ignored
-Test func() {
+Test func() {    
 	return Test{};
 }
 
 int main() {
 	func();  // Call func and ignore its returned value
+    //Test t = func(); // No warning
 }

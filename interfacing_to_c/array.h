@@ -1,4 +1,4 @@
-#ifndef ARRAY_H
+ #ifndef ARRAY_H
 #define ARRAY_H
 
 int array_print(int arr[], int n);

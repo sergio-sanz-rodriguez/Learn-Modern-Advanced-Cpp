@@ -26,7 +26,7 @@ int main() {
 	vector<int> vec{3, 1, 4, 1, 5, 9};
 
 	cout << "vec before calling Reverse()\n";
-	for (auto v : vec)
+	 for (auto v : vec)
 		cout << v << ", ";
 	cout << "\n";
 
